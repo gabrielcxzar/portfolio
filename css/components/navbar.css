@@ -11,6 +11,13 @@
   padding: 3rem 4rem 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navbar__content .navbar__brand {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
 }
 
 .navbar .navbar__content .navbar__links li {

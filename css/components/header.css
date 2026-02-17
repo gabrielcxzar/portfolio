@@ -17,6 +17,12 @@ header .header__left p {
   max-width: 50rem;
 }
 
+header .header__left .header__cta {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
 header .header__right .header__image {
   position: relative;
   line-height: 0;
@@ -38,7 +44,9 @@ header .header__right .header__image::after {
 header .header__right .header__image .lucas {
   border-radius: 0.5rem;
   min-width: 25rem;
-  max-width: 100%;
+  max-width: 36rem;
+  width: 100%;
+  height: auto;
 }
 
 header .header__right .header__image .background {
@@ -56,5 +64,9 @@ header .header__right .header__image .background {
 
   header .header__left p {
     margin: 2rem auto 4rem;
+  }
+
+  header .header__left .header__cta {
+    justify-content: center;
   }
 }
