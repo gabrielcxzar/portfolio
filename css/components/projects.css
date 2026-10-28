@@ -63,3 +63,36 @@
     min-width: auto;
   }
 }
+
+/* Visualizações dos cases corporativos: sem imagens de ícones ampliadas. */
+.projects ul li .project-visual {
+  box-sizing: border-box;
+  flex: 0 1 47rem;
+  width: 100%;
+  min-width: 0;
+  min-height: 27rem;
+  padding: 3.2rem;
+  border-radius: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.6rem;
+  overflow-wrap: anywhere;
+  background: linear-gradient(135deg, #17243b, #294669);
+  color: #ffffff;
+}
+.projects ul li .project-visual--reports { background: linear-gradient(135deg, #133f50, #287e85); }
+.projects ul li .project-visual--integrations { background: linear-gradient(135deg, #392657, #685298); }
+.projects ul li .project-visual .project-visual__label {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  opacity: .85;
+}
+.projects ul li .project-visual strong { font-size: clamp(2rem, 3vw, 3.2rem); line-height: 1.2; }
+.projects ul li .project-visual .project-visual__stack { font-size: 1.5rem; opacity: .9; }
+@media only screen and (max-width: 768px) {
+  .projects ul li .project-visual { flex: none; min-height: 22rem; padding: 2.5rem; }
+}
